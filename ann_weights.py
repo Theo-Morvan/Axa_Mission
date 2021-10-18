@@ -10,7 +10,8 @@ from sklearn.metrics import confusion_matrix, classification_report
 
 from sklearn.utils import class_weight
 
-raw_data = pd.read_csv('C:/Users/32mor/data_science/AXA/ann_model/data_ann.csv')
+choose_directory = 'your directory'
+raw_data = pd.read_csv(f'/data_ann.csv'{choose_directory})
 raw_data = raw_data.drop(['Unnamed: 0'], axis=1)
 raw_data.head()
 
